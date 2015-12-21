@@ -324,26 +324,26 @@
 			remoteGlobalIDString = 095981C219806A7900807DBE;
 			remoteInfo = "OHHTTPStubs Mac Framework";
 		};
-		DB3A5F011BED707B003919E4 /* PBXContainerItemProxy */ = {
+		D85FACE91C16D615005A6EFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7E5557191A8D3D7400344F86 /* Bolts.xcodeproj */;
+			containerPortal = 7E55573F1A8E89A800344F86 /* OHHTTPStubs.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F5AFCA021BA752750076E927;
-			remoteInfo = "Bolts-tvOS";
+			remoteGlobalIDString = 093442F91B80EC4A00A91535;
+			remoteInfo = "OHHTTPStubs iOS Fmk Tests";
 		};
-		DB3A5F031BED707B003919E4 /* PBXContainerItemProxy */ = {
+		D85FACEB1C16D615005A6EFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7E5557191A8D3D7400344F86 /* Bolts.xcodeproj */;
+			containerPortal = 7E55573F1A8E89A800344F86 /* OHHTTPStubs.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 8178F99C1BB0F87700AD289D;
-			remoteInfo = "Bolts-watchOS";
+			remoteGlobalIDString = EAA436A51BE1598D000E9E99;
+			remoteInfo = "OHHTTPStubs tvOS Framework";
 		};
-		DB3A5F051BED707B003919E4 /* PBXContainerItemProxy */ = {
+		D85FACED1C16D615005A6EFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7E5557191A8D3D7400344F86 /* Bolts.xcodeproj */;
+			containerPortal = 7E55573F1A8E89A800344F86 /* OHHTTPStubs.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = F5AFCA131BA752770076E927;
-			remoteInfo = "BoltsTests-tvOS";
+			remoteGlobalIDString = EA100AB71BE15BE400129352;
+			remoteInfo = "OHHTTPStubs tvOS Fmk Tests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -572,11 +572,8 @@
 			children = (
 				9D9947171A9531B5003375EC /* Bolts.framework */,
 				9D0043261AA91B18008DEB62 /* Bolts.framework */,
-				DB3A5F021BED707B003919E4 /* Bolts.framework */,
-				DB3A5F041BED707B003919E4 /* Bolts.framework */,
 				9D9947191A9531B5003375EC /* BoltsTests-iOS.xctest */,
 				9D99471B1A9531B5003375EC /* BoltsTests-OSX.xctest */,
-				DB3A5F061BED707B003919E4 /* BoltsTests-tvOS.xctest */,
 				9D99471D1A9531B5003375EC /* BoltsTestUI.app */,
 			);
 			name = Products;
@@ -596,8 +593,11 @@
 				7E55574C1A8E89A800344F86 /* libOHHTTPStubs.a */,
 				9D99472F1A9531B5003375EC /* OHHTTPStubs iOS Tests.xctest */,
 				892CCDA91B7BDB5700E3D351 /* OHHTTPStubs.framework */,
+				D85FACEA1C16D615005A6EFA /* OHHTTPStubs iOS Fmk Tests.xctest */,
 				ADEA17821B7ECA1A0070EDC0 /* OHHTTPStubs.framework */,
 				9D9947331A9531B5003375EC /* OHHTTPStubs Mac Tests.xctest */,
+				D85FACEC1C16D615005A6EFA /* OHHTTPStubs.framework */,
+				D85FACEE1C16D615005A6EFA /* OHHTTPStubs tvOS Fmk Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1240,14 +1240,14 @@
 		9D9947191A9531B5003375EC /* BoltsTests-iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "BoltsTests-iOS.xctest";
+			path = BoltsTests.xctest;
 			remoteRef = 9D9947181A9531B5003375EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		9D99471B1A9531B5003375EC /* BoltsTests-OSX.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "BoltsTests-OSX.xctest";
+			path = MacBoltsTests.xctest;
 			remoteRef = 9D99471A1A9531B5003375EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1289,7 +1289,7 @@
 		9D99472F1A9531B5003375EC /* OHHTTPStubs iOS Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "OHHTTPStubs iOS Tests.xctest";
+			path = "OHHTTPStubs iOS Lib Tests.xctest";
 			remoteRef = 9D99472E1A9531B5003375EC /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1307,25 +1307,25 @@
 			remoteRef = ADEA17811B7ECA1A0070EDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DB3A5F021BED707B003919E4 /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = DB3A5F011BED707B003919E4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DB3A5F041BED707B003919E4 /* Bolts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Bolts.framework;
-			remoteRef = DB3A5F031BED707B003919E4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DB3A5F061BED707B003919E4 /* BoltsTests-tvOS.xctest */ = {
+		D85FACEA1C16D615005A6EFA /* OHHTTPStubs iOS Fmk Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "BoltsTests-tvOS.xctest";
-			remoteRef = DB3A5F051BED707B003919E4 /* PBXContainerItemProxy */;
+			path = "OHHTTPStubs iOS Fmk Tests.xctest";
+			remoteRef = D85FACE91C16D615005A6EFA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D85FACEC1C16D615005A6EFA /* OHHTTPStubs.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OHHTTPStubs.framework;
+			remoteRef = D85FACEB1C16D615005A6EFA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D85FACEE1C16D615005A6EFA /* OHHTTPStubs tvOS Fmk Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OHHTTPStubs tvOS Fmk Tests.xctest";
+			remoteRef = D85FACED1C16D615005A6EFA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
